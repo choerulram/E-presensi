@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dosen.dashboard');
 });
+
+// Route::get('/', function () {
+//     return view('layouts.mahasiswa');
+// });
