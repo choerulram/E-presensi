@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\DosenAbsensiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,8 @@ Route::get('/', function () {
     return view('dosen.dashboard');
 });
 
-Route::get('/dosen/absensi', function () {
-    return view('dosen.absensi');
+Route::get('/absensi', [DosenAbsensiController::class, 'index']);
+Route::get('/notifikasi', function () {
+    return view('dosen.notifikasi');
 });
+
