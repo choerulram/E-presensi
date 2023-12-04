@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('dosen.dashboard');
 });
 
-// Route::get('/', function () {
-//     return view('layouts.mahasiswa');
-// });
+Route::get('/dosen/absensi', function () {
+    return view('dosen.absensi');
+});
