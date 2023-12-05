@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Attendance;
 use Illuminate\Http\Request;
+use App\Models\Attendance;
 
-class DosenAbsensiController extends Controller
+class AttendanceController extends Controller
 {
     public function index()
     {
         $attendance = Attendance::all();
-        return view('dosen.absensi');
+        return view('dosen.attendance', ['attendanceList' => $attendance]);
     }
 }
