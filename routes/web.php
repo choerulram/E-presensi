@@ -40,7 +40,14 @@ Route::get('/attendance', [AttendanceController::class, 'index'])->middleware('a
 Route::get('/course', [CourseController::class, 'index'])->middleware('auth');
 Route::get('/lecturer', [LecturerController::class, 'index'])->middleware('auth');
 Route::get('/class', [ClassController::class, 'index'])->middleware('auth');
+
 Route::get('/student', [StudentController::class, 'index'])->middleware('auth');
+Route::get('/student-add', [StudentController::class, 'create'])->middleware('auth');
+Route::post('/student', [StudentController::class, 'store'])->middleware('auth');
+Route::get('/student-edit/{id}', [StudentController::class, 'edit'])->middleware('auth');
+Route::put('/student/{id}', [StudentController::class, 'update'])->middleware('auth');
+Route::get('/student-delete/{id}', [StudentController::class, 'delete'])->middleware('auth');
+Route::delete('/student-destroy/{id}', [StudentController::class, 'destroy'])->middleware('auth');
 
 
 Route::get('/notifikasi', function () {

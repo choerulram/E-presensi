@@ -9,5 +9,10 @@ class ClassRoom extends Model
 {
     use HasFactory;
 
-    protected $table = 'classes';
+    public $table = 'classes';
+
+    public function getNameAttribute()
+    {
+        return $this->attributes['nama_kelas'];
+    }
 }

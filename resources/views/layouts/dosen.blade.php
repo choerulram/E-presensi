@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-presensi | @yield('title')</title>
+    <link rel="icon" type="image/x-icon" href="https://1.bp.blogspot.com/-1zqGVJ340HU/XJSy4wgCRkI/AAAAAAAAQC0/flSsSZ4v7IssnGCLG4UYFEPzQrnxKpWpwCLcBGAs/s72-c/logoPNC.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
 </head>
 <body>
