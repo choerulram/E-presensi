@@ -9,6 +9,11 @@ class Student extends Model
 {
     use HasFactory;
 
+    public function getNameAttribute()
+    {
+        return $this->attributes['nim'];
+    }
+
     protected $fillable = [
         'nim',
         'nama',

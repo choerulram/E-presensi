@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class CourseController extends Controller
 {
@@ -11,5 +11,11 @@ class CourseController extends Controller
     {
         $course = Course::all();
         return view('admin.course', ['courseList' => $course]);
+    }
+
+    public function create()
+    {
+        $class = Course::all();
+        return view('admin.course-add', ['class' => $class]);
     }
 }

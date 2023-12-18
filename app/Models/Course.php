@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Course extends Model
 {
     use HasFactory;
+
+    public function getNameAttribute()
+    {
+        return $this->attributes['nama_matkul'];
+    }
 }

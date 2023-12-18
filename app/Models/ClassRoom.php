@@ -15,4 +15,9 @@ class ClassRoom extends Model
     {
         return $this->attributes['nama_kelas'];
     }
+
+    public function lecturer()
+    {
+        return $this->belongsTo(Lecturer::class, 'dosen_id');
+    }
 }

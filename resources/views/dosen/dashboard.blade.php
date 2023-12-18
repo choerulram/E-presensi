@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="box-shadow: 1px 2px 3px;">
         <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4">
             <div>
                 <button id="dropdownRadioButton" data-dropdown-toggle="dropdownRadio" class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
@@ -231,7 +231,7 @@
 
     {{-- grafik --}}
     <div class="mt-8"></div>
-    <div class="max-w-sm w-full bg-white rounded-lg shadow-md  dark:bg-gray-800 p-4 md:p-6">
+    <div class="max-w-sm w-full bg-white rounded-lg shadow-md  dark:bg-gray-800 p-4 md:p-6" style="box-shadow: 1px 2px 3px;">
         <div class="flex justify-between items-start w-full">
             <div class="flex-col items-center">
                 <div class="flex items-center mb-1">
