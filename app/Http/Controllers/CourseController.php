@@ -15,7 +15,14 @@ class CourseController extends Controller
 
     public function create()
     {
-        $class = Course::all();
-        return view('admin.course-add', ['class' => $class]);
+        $course = Course::all();
+        return view('admin.course-add', ['course' => $course]);
+    }
+
+    public function store(Request $request)
+    {
+        // must assigment
+        $course = Course::create($request->all());
+        return redirect('/course');
     }
 }

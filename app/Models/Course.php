@@ -13,4 +13,11 @@ class Course extends Model
     {
         return $this->attributes['nama_matkul'];
     }
+
+    protected $fillable = [
+        'kode_matkul',
+        'nama_matkul',
+        'semester',
+        'sks',
+    ];
 }
