@@ -49,9 +49,6 @@ Route::get('/attendance', [AttendanceController::class, 'index'])->middleware('a
 Route::get('/attendance-add', [AttendanceController::class, 'create'])->middleware('auth');
 Route::post('/attendance', [AttendanceController::class, 'store'])->middleware('auth');
 Route::get('/attendance-edit/{id}', [AttendanceController::class, 'edit'])->middleware('auth');
-// Route::put('/attendance/{id}', [AttendanceController::class, 'update'])->middleware('auth');
-// Route::get('/attendance-delete/{id}', [AttendanceController::class, 'delete'])->middleware('auth');
-// Route::delete('/attendance-destroy/{id}', [AttendanceController::class, 'destroy'])->middleware('auth');
 
 // ADMIN
 Route::get('/notifikasi-admin', function () {
@@ -76,6 +73,8 @@ Route::get('/lecturer-add', [LecturerController::class, 'create'])->middleware('
 Route::post('/lecturer', [LecturerController::class, 'store'])->middleware('auth');
 
 Route::get('/class', [ClassController::class, 'index'])->middleware('auth');
+Route::get('/class-add', [ClassController::class, 'create'])->middleware('auth');
+Route::post('/class', [ClassController::class, 'store'])->middleware('auth');
 
 Route::get('/student', [StudentController::class, 'index'])->middleware('auth');
 Route::get('/student-add', [StudentController::class, 'create'])->middleware('auth');
@@ -84,9 +83,4 @@ Route::get('/student-edit/{id}', [StudentController::class, 'edit'])->middleware
 Route::put('/student/{id}', [StudentController::class, 'update'])->middleware('auth');
 Route::get('/student-deletep/{id}', [StudentController::class, 'delete'])->middleware('auth');
 Route::delete('/student-destroy/{id}', [StudentController::class, 'destroy'])->middleware('auth');
-
-
-
-
-
 

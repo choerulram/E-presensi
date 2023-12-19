@@ -16,6 +16,12 @@ class ClassRoom extends Model
         return $this->attributes['nama_kelas'];
     }
 
+    protected $fillable = [
+        'kode_kelas',
+        'nama_kelas',
+        'dosen_id',
+    ];
+
     public function lecturer()
     {
         return $this->belongsTo(Lecturer::class, 'dosen_id');
