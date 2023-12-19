@@ -50,13 +50,13 @@
                         Nama
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Alamat
-                    </th>
-                    <th scope="col" class="px-6 py-3">
                         Email
                     </th>
                     <th scope="col" class="px-6 py-3">
                         No.HP
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Alamat
                     </th>
                     <th scope="col" class="px-6 py-3">
                         Mata Kuliah
@@ -79,13 +79,13 @@
                         {{ $data->nama }}
                     </td>
                     <td class="px-6 py-4">
-                        {{ $data->alamat }}
-                    </td>
-                    <td class="px-6 py-4">
                         {{ $data->email }}
                     </td>
                     <td class="px-6 py-4">
                         {{ $data->no_hp }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ $data->alamat }}
                     </td>
                     <td class="px-6 py-4">
                         {{ $data->course->getNameAttribute() }}

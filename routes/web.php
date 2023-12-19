@@ -72,6 +72,8 @@ Route::get('/course-add', [CourseController::class, 'create'])->middleware('auth
 Route::post('/course', [CourseController::class, 'store'])->middleware('auth');
 
 Route::get('/lecturer', [LecturerController::class, 'index'])->middleware('auth');
+Route::get('/lecturer-add', [LecturerController::class, 'create'])->middleware('auth');
+Route::post('/lecturer', [LecturerController::class, 'store'])->middleware('auth');
 
 Route::get('/class', [ClassController::class, 'index'])->middleware('auth');
 
