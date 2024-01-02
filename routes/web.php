@@ -67,6 +67,8 @@ Route::get('/class-admin', function () {
 Route::get('/course', [CourseController::class, 'index'])->middleware('auth');
 Route::get('/course-add', [CourseController::class, 'create'])->middleware('auth');
 Route::post('/course', [CourseController::class, 'store'])->middleware('auth');
+Route::get('/course-edit/{id}', [CourseController::class, 'edit'])->middleware('auth');
+Route::put('/course/{id}', [CourseController::class, 'update'])->middleware('auth');
 
 Route::get('/lecturer', [LecturerController::class, 'index'])->middleware('auth');
 Route::get('/lecturer-add', [LecturerController::class, 'create'])->middleware('auth');

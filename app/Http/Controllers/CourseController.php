@@ -25,4 +25,18 @@ class CourseController extends Controller
         $course = Course::create($request->all());
         return redirect('/course');
     }
+
+    public function edit(Request $request, $id)
+    {
+        $course = Course::findOrFail($id);
+        // $class = ClassRoom::where('id', '!=', $course->class_id)->get(['id', 'nama_kelas']);
+        return view('admin.course-edit', ['course' => $course]);
+    }
+
+    // public function update(Request $request, $id)
+    // {
+    //     $course = Course::findOrFail($id);
+    //     $course->update($request->all());
+    //     return redirect('/course');
+    // }
 }
