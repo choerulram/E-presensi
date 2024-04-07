@@ -16,8 +16,10 @@ class AttendanceController extends Controller
 
     public function create()
     {
-        $attendance = Student::all();
-        return view('dosen.attendance-add', ['attendance' => $attendance]);
+        $attendance = Attendance::all();
+        return view('dosen.attendance-add', ['attendanceList' => $attendance]);
+        // $attendance = Student::all();
+        // return view('dosen.attendance-add', ['attendance' => $attendance]);
     }
 
     public function store(Request $request)

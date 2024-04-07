@@ -27,6 +27,12 @@
             text-align: center;
             margin-bottom: 1rem;
         }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                border-radius: 0; /* Remove border-radius on small screens */
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100">

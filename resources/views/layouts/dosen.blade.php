@@ -8,9 +8,9 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/pnc.png') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
     <style>
-        nav{
+        /* nav{
             background-color: #E3A008;
-        }
+        } */
         .notifikasi {
             max-width: 800px; /* Ganti dengan lebar yang diinginkan */
         }
@@ -19,7 +19,7 @@
 <body>
 
 
-    <nav class="fixed top-0 z-50 w-full border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start rtl:justify-end">
